@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>javascript</title>
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<span id="my_span">try me!</span>
+		<script>
+			$(document).ready(function() {
+				$('#my_span').click(function() {
+					$.get('test.php', function(data, status) {
+						alert("data: " + data + "\nstatus: " + status);
+					})
+				});
+			});
+		</script>
+	</body>
+</html>

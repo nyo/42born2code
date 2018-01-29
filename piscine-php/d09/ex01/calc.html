@@ -1,0 +1,56 @@
+<html>
+	<body>
+		<input type="text" id="mg" />
+		<select id="op" size="5">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+			<option>%</option>
+		</select>
+		<input type="text" id="md" />
+		<input type="submit" value="Try me!" onclick="doMaths()" />
+		<script type="text/javascript">
+		setInterval(function() { alert('Please, use me...'); }, 30000);
+		function isInt(str) {
+			var n = Math.floor(Number(str));
+			return String(n) === str && n >= 0;
+		}
+		function doMaths() {
+			var mg = document.getElementById("mg").value;
+			var md = document.getElementById("md").value;
+			var op = document.getElementById("op").value;
+			var res;
+
+			if (!isInt(mg) || !isInt(md)) {
+				alert('Error :(');
+				return;
+			}
+
+			if (op == '+') {
+				res = +mg + +md;
+			} else if (op == '-') {
+				res = mg - md;
+			} else if (op == '*') {
+				res = mg * md;
+			} else if (op == '/') {
+				if (md == 0) {
+					alert('It’s over 9000!');
+					console.log('It’s over 9000!');
+					return;
+				}
+				res = mg / md;
+			} else if (op == '%') {
+				if (md == 0) {
+					alert('It’s over 9000!');
+					console.log('It’s over 9000!');
+					return;
+				}
+				res = mg % md;
+			}
+			alert(res);
+			console.log(res);
+		}
+		</script>
+	</body>
+</html>

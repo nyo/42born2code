@@ -1,0 +1,36 @@
+<- Matrix ----------------------------------------------------------------------
+
+	The Matrix class allows maths operations on matrices, and vertex.
+
+	A basic instance can be constructed with the following syntax:
+new Matrix( array( 'preset' => Matrix::IDENTITY ) );
+
+	You can create a translation matrix this way:
+$vtx = new Vertex( array( 'x' => 20.0, 'y' => 20.0, 'z' => 0.0 ) );
+$vtc = new Vector( array( 'dest' => $vtx ) );
+$T  = new Matrix( array( 'preset' => Matrix::TRANSLATION, 'vtc' => $vtc ) );
+
+	You can create a scale matrix this way:
+$S  = new Matrix( array( 'preset' => Matrix::SCALE, 'scale' => 10.0 ) );
+
+	You can do rotation along axises this way:
+$RX = new Matrix( array( 'preset' => Matrix::RX, 'angle' => M_PI_4 ) );
+$RY = new Matrix( array( 'preset' => Matrix::RY, 'angle' => M_PI_2 ) );
+$RZ = new Matrix( array( 'preset' => Matrix::RZ, 'angle' => 2 * M_PI ) );
+
+	You can create a projection matrix this way:
+$P = new Matrix( array( 'preset' => Matrix::PROJECTION,
+						'fov' => 60,
+						'ratio' => 640/480,
+						'near' => 1.0,
+						'far' => -50.0 ) );
+
+	The class provides the following methods:
+
+Matrix	mult( Matrix $rhs )				:	returns the multiplication of
+											both matrices.
+Vertex	transformVertex( Vertex $vtx )	:	returns a new vertex resulting from
+											the transformation of the vertex
+											by the matrix.
+
+---------------------------------------------------------------------- Matrix ->

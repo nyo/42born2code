@@ -1,0 +1,70 @@
+body {
+	background-color: lightgoldenrodyellow;
+}
+
+table {
+	table-layout: fixed;
+	width: 50px;
+}
+
+.mysymbol {
+	font-family: "Comic Sans MS";
+	font-size: 150%;
+	font-weight: bold;
+	color: black;
+}
+
+.mytd {
+	border: 1px solid black;
+	width: 100px;
+}
+
+.mytdblank {
+	width: 100px;
+}
+
+@media only screen and (max-width: 1900px) {
+	table {
+		table-layout: fixed;
+		width: 35px;
+	}
+
+	.mysymbol {
+		font-family: "Comic Sans MS";
+		font-size: 100%;
+		font-weight: bold;
+		color: black;
+	}
+
+	.mytd {
+		border: 1px solid black;
+		width: 75px;
+	}
+
+	.mytdblank {
+		width: 75px;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	table {
+		table-layout: fixed;
+		width: 25px;
+	}
+
+	.mysymbol {
+		font-family: "Comic Sans MS";
+		font-size: 75%;
+		font-weight: bold;
+		color: black;
+	}
+
+	.mytd {
+		border: 1px solid black;
+		width: 50px;
+	}
+
+	.mytdblank {
+		width: 50px;
+	}
+}

@@ -1,0 +1,19 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class represents a vertex according to five characteristics:
+	-	its x axis coordinate
+	-	its y axis coordinate
+	-	its z depth coordinate
+	-	its w coordinate (feel free to search on Google "homogeneous coordinates")
+	-	a color class (given by Color.class.php)
+
+An instance can be constructed by giving AT LEAST the coordinates x, y & z:
+new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+
+Or coordinates x, y, a + the w coordinate 7 a color class:
+$red = new Color( array( 'red' => 255, 'green' =>   0, 'blue' =>   0 ) );
+new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0, 'w' => 1.0, 'color' => $red) );
+
+If w is not given, its default value is 1.0.
+If color is not given, its default value is a color class for white.
+---------------------------------------------------------------------- Vertex ->
