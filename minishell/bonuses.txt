@@ -1,0 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    bonuses.txt                                        :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: anyo <marvin@42.fr>                        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2017/08/12 22:42:01 by anyo              #+#    #+#              #
+#    Updated: 2017/08/24 14:52:47 by anyo             ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+	-	signaux
+	-	droits dans le PATH
+	-	""" mode couleur """
+	-	interpretation de '~', '.' & '..'
+	-	echo $ENV_ENTRY
+	-	$SHLVL qui change en fonction du niveau du shell
+	-	( implementations de certaines options dans les builtins
+		[`echo -n`, `env -i`, `exit <status>`, `cd -`, `cd ~`] )
+	-	( gestion du cas d'un environement vide a l'appel de `./minishell`)
+
