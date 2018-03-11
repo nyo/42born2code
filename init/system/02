@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo hostname $1

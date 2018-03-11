@@ -1,0 +1,2 @@
+#!/bin/sh
+nohup sudo tail -f /var/log/syslog &

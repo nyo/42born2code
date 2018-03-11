@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# ifconfig en1 -- display network interface
+# expand -- expand tabs to spaces
+# grep "ether" -- return line(s) that contains "ether"
+# awk '{print $2}' -- print the second (2) argument of the line
+
+ifconfig en1 | expand | grep "ether" | awk '{print $2}'

@@ -1,0 +1,3 @@
+# cat /etc/resolv.conf
+
+Le fichier utilisé pour spécifier l'addresse IP du serveur DNS que l'on utilise est "resolv.conf", ayant pour chemin complet "/etc/resolv.conf".

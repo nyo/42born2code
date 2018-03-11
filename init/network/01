@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# ifconfig -- display network interface
+# expand -- expand tabs to spaces
+# cut -c 1-8 -- cut out selected portions of each line of the input
+# uniq -u -- filter out lines that are repeated in the input
+# awk -F: '{print $1;}' -- print the first field before a colon
+
+ifconfig | expand | cut -c 1-8 | uniq -u | awk -F: '{print $1}'

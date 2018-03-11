@@ -1,0 +1,2 @@
+À l’aide de la commande `traceroute "slash16.org"`, on voit que le packet envoyé passe par un serveur Amazon ("amazon.par.franceix.net"), qui est l'hébergeur du site de Slash16.
+On peut aussi récupérer l'IP du serveur DNS de slash16.org, puis voir avec la commande `whois <IP>` que cette addresse est hebergée chez "Amazon.com, Inc.".

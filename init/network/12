@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# send one IMCP ECHO_REQUEST packet to IP "10.51.1.253", echo "true" if reached, "false" if not.
+
+if ping -c 3 "10.51.1.253" 1>&- 2>&-; then echo "true"; else echo "false"; fi

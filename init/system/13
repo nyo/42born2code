@@ -1,0 +1,6 @@
+#!/bin/sh
+ps -A | less
+
+# top
+# pstree
+# htop

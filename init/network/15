@@ -1,0 +1,4 @@
+# cat /private/etc/hosts
+# cat /etc/hosts
+
+Sous macOS (OS X 10.2 et supérieur), le fichier contenant les entrées locales DNS peut être "/private/etc/hosts" ou "/etc/hosts" (ou les deux).

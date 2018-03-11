@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# nslookup [...] -- query "slash16.org" server with Google's DNS ("google.com 8.8.8.8")
+
+nslookup "slash16.org" "google.com" "8.8.8.8"

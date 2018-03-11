@@ -1,0 +1,6 @@
+# nslookup "42.fr" "google.com" "8.8.8.8" | grep "Address" | awk '{print $2}'
+
+[...]
+163.172.250.11
+163.172.250.12
+[...]

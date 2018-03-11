@@ -1,0 +1,5 @@
+# sudo echo -e "46.19.122.85\tintra.42.fr" >> /etc/hosts
+
+Pour faire une résolution DNS locale, il suffit d’indiquer l’adresse ip puis l’addresse de la cible, dans le fichier contenant les entrées locales DNS.
+Ainsi, dans notre cas, on y ajouterait la ligne suivante (nécessite un accès root):
+46.19.122.85	intra.42.fr

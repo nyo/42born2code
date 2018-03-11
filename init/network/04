@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# route -n get default -- display informations about "default" routing table
+# expand -- expand tabs to spaces
+# grep "gateway" -- return line(s) that contains "gateway"
+# awk '{print $2}' -- print the second (2) argument of the line
+
+route -n get "default" | expand | grep "gateway" | awk '{print $2}'

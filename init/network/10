@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# traceroute -- print the route packets take to network host
+
+traceroute "slash16.org"

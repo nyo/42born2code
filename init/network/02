@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# ipconfig getifaddr en0 -- print IP address for the network service associated with en0
+
+ipconfig getifaddr en0

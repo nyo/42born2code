@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# ping -c 1 "slash16.org" -- send one (1) IMCP ECHO_REQUEST packet to "slash16.org"
+# awk -- pattern-directed scanning and processing language
+#	-F'[()]' - set awk field delimiters to open and close parentheses
+#	'/PING/{print $2}' - print the 2nd field, only if current line contains "PING" 
+
+ping -c 1 "slash16.org" | awk -F'[()]' '/PING/{print $2}'

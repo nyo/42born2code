@@ -1,0 +1,11 @@
+#!/bin/sh
+MD5SUM=$(cat ~/.crontab_md5 2>&-)
+NEWSUM=$(md5sum /etc/crontab | cut -d ' ' -f 1)
+if [ "$MD5SUM" != "$NEWSUM" ]
+then
+	md5sum /etc/crontab | cut -d ' ' -f 1 > ~/.crontab_md5
+	mail -s "[!] /etc/crontab has been modified!" root < /etc/crontab >/dev/null 2>&-
+fi
+
+# crontab -e
+# 0 0 * * * /bin/sh ~/init/scripts/04 >/dev/null 2>&1

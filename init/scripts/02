@@ -1,0 +1,9 @@
+#!/bin/sh
+LOGFILE="/var/log/update_script.log"
+echo "\n[ $(date) ]" >> $LOGFILE
+sudo apt-get -y update >> $LOGFILE
+echo "\n[ $(date) ]" >> $LOGFILE
+sudo apt-get -y upgrade >> $LOGFILE
+
+# crontab -e
+# 0 4 * * 1 /bin/sh ~/init/scripts/02 >/dev/null 2>&1

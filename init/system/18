@@ -1,0 +1,4 @@
+#!/bin/sh
+sudo iptables -A INPUT -s 10.0.0.0/8 -j ACCEPT
+sudo iptables -A FORWARD -s 10.0.0.0/8 -j ACCEPT
+sudo iptables -A OUTPUT -s 10.0.0.0/8 -j ACCEPT
