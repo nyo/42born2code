@@ -11,7 +11,7 @@ Thanks to all the shell projects, you will connect with the infinite power of Ma
 make
 ```
 
-### Usage
+available rules:
 ```
 make re
 make clean

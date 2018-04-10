@@ -8,7 +8,7 @@ In short: This project will make you recode the command “ls”
 make
 ```
 
-### Usage
+available rules:
 ```
 make re
 make clean

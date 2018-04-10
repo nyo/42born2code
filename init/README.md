@@ -9,9 +9,6 @@ N/A
 ### Usage
 N/A
 
-### Usage
-N/A
-
 ### Picture(s)
 N/A
 

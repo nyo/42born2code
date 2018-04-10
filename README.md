@@ -16,6 +16,7 @@ _I am letting everything intact, exactly as I uploaded them to get my final grad
 - **[ft_select](ft_select)**
 - **[Piscine PHP](piscine-php)**
 - **[init](init)**
+- **[21sh](21sh)**
 
 ### Task list, for this repository
 - [x] Global README

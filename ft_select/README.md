@@ -8,7 +8,7 @@ This project is meant to make you code a small program using termcaps which will
 make
 ```
 
-### Usage
+available rules:
 ```
 make re
 make clean
