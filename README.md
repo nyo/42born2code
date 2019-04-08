@@ -18,7 +18,8 @@ _I am letting everything intact, exactly as I uploaded them to get my final grad
 - **[init](init)**
 - **[21sh](21sh)**
 - **[42sh](42sh)**
-- **[lldb](lldb)**
+- **[Rushes > LLDB](lldb)**
+- **[roger-skyline-1](roger-skyline-1)**
 
 ### Task list, for this repository
 - [x] Global README
