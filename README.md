@@ -17,6 +17,7 @@ _I am letting everything intact, exactly as I uploaded them to get my final grad
 - **[Piscine PHP](piscine-php)**
 - **[init](init)**
 - **[21sh](21sh)**
+- **[42sh](42sh)**
 
 ### Task list, for this repository
 - [x] Global README
