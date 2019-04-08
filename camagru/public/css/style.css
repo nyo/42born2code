@@ -1,0 +1,535 @@
+html, body {
+	width	: 100%;
+	height	: 100%;
+	margin	: 0px 0px 0px 0px;
+}
+
+body {
+	background-color	: #e5e6eb;
+	color				: black;
+	font-size			: 1em;
+	font-family			: "Roboto", sans-serif;
+}
+
+a {
+	color			: #202020;
+	text-decoration	: none
+}
+
+/* --- header --- */
+
+#cr-header {
+	background-color	: #f8f8fa;
+	box-shadow			: 0px 0px 30px #afafaf;
+	border-bottom		: 3px solid #f7e9dc;
+	height				: 80px;
+	display				: flex;
+	position			: fixed;
+	top					: 0;
+	left				: 0;
+	right				: 0;
+	justify-content		: space-between;
+	align-items			: center;
+	z-index				: 1337;
+}
+
+#cr-header #cr-logo {
+	margin-left		: 15px;
+	display			: flex;
+	flex-direction	: row;
+	align-items		: center;
+	width			: 150px;
+	justify-content	: space-between;
+}
+
+#cr-header #cr-logo img {
+	width	: 40px;
+}
+
+#cr-header #cr-buttons {
+	margin-right	: 15px;
+	display			: flex;
+	justify-content	: space-between;
+	height			: 70px;
+	width			: 100px;
+	flex-direction	: column;
+}
+
+#cr-header #cr-buttons .cr-button {
+	background-color	: #e5e6eb;
+	color				: #202020;
+	text-align			: center;
+	vertical-align		: middle;
+	line-height			: 35px;
+	height				: 35px;
+}
+
+#cr-header #cr-buttons .cr-button span {
+	cursor		: pointer;
+	display		: inline-block;
+	position	: relative;
+	transition	: 0.5s;
+}
+
+#cr-header #cr-buttons .cr-button span:after {
+	content		: "\203a";
+	position	: absolute;
+	opacity		: 0;
+	top			: 0;
+	right		: -15px;
+	transition	: 0.5s;
+}
+
+#cr-header #cr-buttons .cr-button:hover span {
+	padding-right	: 15px;
+}
+
+#cr-header #cr-buttons .cr-button:hover span:after {
+	opacity	: 1;
+	right	: 0;
+}
+
+/* --- main --- */
+
+#cr-main {
+	margin				: 0;
+	padding-bottom		: 90px;
+	padding-top			: 90px;
+	padding-left		: 10px;
+	padding-right		: 10px;
+}
+
+/* --- main :: activity feed --- */
+
+#cr-upload-link {
+	background-color	: #efefef;
+	border				: 5px solid grey;
+	width				: 750px;
+	height				: 70px;
+	margin-top			: 25px;
+	margin-bottom		: 25px;
+	color				: grey;
+	font-size			: 1.5em;
+	line-height			: 70px;
+	text-align			: center;
+}
+
+#cr-upload-link a {
+	color	: grey;
+}
+
+#cr-upload-link:hover {
+	background-color	: #e0e0e0;
+	cursor				: pointer;
+}
+
+#cr-feed {
+	display			: flex;
+	flex-direction	: column;
+	align-items		: center;
+	padding-top		: 25px;
+	padding-bottom	: 25px;
+}
+
+.cr-post {
+	display				: flex;
+	margin-top			: 25px;
+	margin-bottom		: 25px;
+	border				: 5px solid grey;
+	height				: 500px;
+	width				: 750px;
+	position			: relative;
+}
+
+.cr-post img {
+	width	: 500px;
+}
+
+.cr-post-data {
+	display			: flex;
+	flex-direction	: column;
+	height				: 500px;
+	width				: 245px;
+	background-color	: white;
+	border-left			: 5px solid grey;
+}
+
+.cr-post-owner {
+	text-align			: center;
+	line-height			: 50px;
+	height				: 50px;
+	width				: 250px;
+	z-index				: 42;
+	box-shadow			: 0px 4px 10px 1px #afafaf;
+}
+
+.cr-post-owner span {
+	font-size	: 0.8em;
+}
+
+.cr-post-comments {
+	word-wrap			: break-word;
+	overflow			: auto;
+	height				: 400px;
+	padding				: 0px 10px 0px 10px;
+	z-index				: 0;
+	font-size			: 0.9em;
+}
+
+.cr-post-comments hr {
+	color	: white;
+}
+
+#cr-post-like {
+	background-color	: white;
+	position			: absolute;
+	height				: 500px;
+	width				: 500px;
+	left				: 0px;
+	top					: 0px;
+	right				: 0px;
+	bottom				: 0px;
+	opacity				: 0;
+	text-align			: center;
+	line-height			: 500px;
+	color				: grey;
+	font-size			: 3em;
+}
+
+#cr-post-like:hover {
+	opacity	: 0.3;
+	cursor	: pointer;
+}
+
+#cr-post-like .fa-heart {
+	font-size			: 1em;
+}
+
+#cr-post-like .fa-heart:hover {
+	color	: red;
+}
+
+.cr-post-likes {
+	height				: 20px;
+	width				: 250px;
+	z-index				: 42;
+	text-align			: center;
+	box-shadow			: 0px 4px 10px 0px #afafaf;
+}
+
+.cr-post-likes span {
+	color			: #1f1f1f;
+	font-size		: 0.8em;
+	/*
+	padding-left	: 15px;
+	padding-right	: 15px;
+	 */
+}
+
+.cr-post-likes .fa-heart:hover {
+	color	: red;
+	cursor	: pointer;
+}
+
+.cr-post-comment {
+	height				: 50px;	
+	box-shadow			: 0 -4px 10px 1px #afafaf;
+	z-index				: 42;
+}
+
+.cr-post-comment input[type=text] {
+	width		: 250px;
+	height		: 50px;
+	display		: inline-block;
+	box-sizing	: border-box;
+	border		: none;
+	padding-left	: 15px;
+}
+
+.cr-post-comment button {
+	text-align			: center;
+	width				: 40px;
+	height				: 50px;
+	border				: none;
+	cursor				: pointer;
+	background-color	: transparent;
+	background-repeat	: no-repeat;
+	overflow			: hidden;
+	outline				: none;
+}
+
+.cr-post-comment form {
+	display				: flex;
+	flex-direction		: row;
+}
+
+.cr-post-comment .fa-comment {
+	color	: grey;
+}
+
+/* --- main :: profile --- */
+
+#cr-profile-title, #cr-settings-title {
+	font-size	: 1.2em;
+	color		: grey;
+}
+
+#cr-profile {
+	display			: flex;
+	justify-content	: center;
+	align-items		: center;
+}
+
+#cr-user-data {
+	background-color	: #efefef;
+	width				: 680px;
+	height				: 145px;
+	border				: 3px solid lightgrey;
+	display				: flex;
+	flex-direction		: row;
+	align-items			: center;
+}
+
+#cr-user-data img {
+	height			: 145px;
+	border-right	: 3px solid lightgrey;
+}
+
+#cr-user-data table {
+	margin-left			: 15px;
+	margin-right		: 15px;
+	width				: 500px;
+}
+
+#cr-settings {
+	display				: flex;
+	justify-content		: space-evenly;
+	align-items			: center;
+}
+
+#cr-settings p {
+	text-align	: center;
+}
+
+#cr-settings input[type=text], input[type=password] {
+	width		: 300px;
+	padding		: 12px 20px;
+	margin		: 8px 0;
+	display		: inline-block;
+	border		: 1px solid #ccc;
+	box-sizing	: border-box;
+}
+
+#cr-settings button {
+	width				: 300px;
+	background-color	: #afafaf;
+	color				: #f8f8fa;
+	padding				: 14px 20px;
+	margin				: 8px 0;
+	border				: none;
+	cursor				: pointer;
+}
+
+.cr-setting {
+	background-color	: #efefef;
+	height				: 290px;
+	width				: 340px;
+	border				: 3px solid lightgrey;
+}
+
+/* --- main :: forms --- */
+
+#cr-sign-form {
+	display			: flex;
+	flex-direction	: column;
+	align-items		: center;
+	padding-top		: 25px;
+	padding-bottom	: 25px;
+}
+
+#cr-sign-form input[type=text], input[type=password], input[type=email] {
+	width		: 300px;
+	padding		: 12px 20px;
+	margin		: 8px 0;
+	display		: inline-block;
+	border		: 1px solid #ccc;
+	box-sizing	: border-box;
+}
+
+#cr-sign-form button {
+	width				: 300px;
+	background-color	: #afafaf;
+	color				: #f8f8fa;
+	padding				: 14px 20px;
+	margin				: 8px 0;
+	border				: none;
+	cursor				: pointer;
+}
+
+#cr-message {
+	width				: 300px;
+	height				: 40px;
+	line-height			: 40px;
+	text-align			: center;
+	margin-top			: 93px;
+	right				: 10px;
+	color				: white;
+	background-color	: #ff6666;
+	font-size			: 0.9em;
+	position			: absolute;
+	top					: -50px;
+	-webkit-transition	: top 0.3s;	
+}
+
+/* --- main :: upload --- */
+
+#cr-upload-page {
+	display			: flex;
+	flex-direction	: column;
+	align-items		: center;
+}
+
+#cr-upload-box {
+	display				: flex;
+	flex-direction		: column;
+	width				: 1000px;
+	height				: 575px;
+	background-color	: lightgrey;
+	border				: 3px solid darkgrey;
+}
+
+#cr-preview-box {
+	width			: 1000px;
+	height			: 500px;
+	position		: relative;
+	display			: flex;
+	flex-direction	: row;
+	border-bottom	: 3px solid darkgrey;
+}
+
+#cr-webcam-source {
+	/* FaceTime HD Camera (Built-in) (640x480) -> 500*666 -> 666-500=166/2=83 */
+	height		: 100%;
+	margin-left	: 167px;
+	position	: absolute;
+}
+
+#cr-canvas {
+	height			: 500px;
+	width			: 500px;
+	margin-left		: 250px;
+	position		: absolute;
+}
+
+#cr-filters {
+	height				: 500px;
+	width				: 500px;
+	margin-left			: 250px;
+	position			: absolute;
+	z-index				: 100;
+}
+
+#cr-filters-left, #cr-filters-right {
+	width			: 250px;
+	height			: 100%;
+	background		: lightgrey;
+	position		: absolute;
+	z-index			: 10;
+	display			: flex;
+	flex-direction	: column;
+	justify-content	: space-evenly;
+	align-items			: center;
+}
+
+#cr-filters-left img, #cr-filters-right img {
+	-webkit-filter	: grayscale(100%);
+	filter			: grayscale(100%);
+}
+
+#cr-filters-left img:hover, #cr-filters-right img:hover {
+	-webkit-filter	: grayscale(0%);
+	filter			: grayscale(0%);
+}
+
+#cr-filters-left  {
+	left			: 0px;
+	border-right	: 3px solid darkgrey;
+}
+
+#cr-filters-right {
+	right			: 0px;
+	border-left		: 3px solid darkgrey;
+}
+
+#cr-filters-left img, #cr-filters-right img {
+	height	: 150px;
+	width	: 150px;
+}
+
+#cr-upload-method {
+	display			: flex;
+	flex-direction	: row;
+}
+
+#cr-from-webcam {
+	height	: 75px;
+	width	: 500px;
+}
+
+#cr-from-computer {
+	height	: 75px;
+	width	: 500px;
+}
+
+#cr-submit-box {
+	display				: flex;
+	flex-direction		: row;
+	width				: 1000px;
+	height				: 50px;
+	background-color	: lightgrey;
+	border				: 3px solid darkgrey;
+}
+
+#cr-submit-button {
+	height	: 100%;
+	width	: 100%;
+}
+
+#cr-upload-gallery {
+	width				: 1000px;
+	height				: 300px;
+	background-color	: lightgrey;
+	border				: 3px solid darkgrey;
+	table-layout		: fixed;
+	overflow-x			: scroll;
+	overflow-y			: hidden;
+	display				: flex;
+	flex-direction		: row;
+}
+
+#cr-gallery-post {
+	display			: flex;
+	flex-direction	: column;
+	height			: 300px;
+}
+
+.cr-delete-button {
+	height	: 36px;
+}
+
+/* --- footer --- */
+
+#cr-footer {
+	background-color	: #f8f8fa;
+	box-shadow			: 0px 0px 30px #afafaf;
+	border-top			: 3px solid #f7e9dc;
+	height				: 80px;
+	display				: flex;
+	align-items			: center;
+	justify-content		: center;
+	position			: fixed;
+	bottom				: 0;
+	left				: 0;
+	right				: 0;
+	z-index				: 1337;
+}

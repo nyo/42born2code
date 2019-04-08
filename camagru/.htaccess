@@ -1,0 +1,8 @@
+ErrorDocument 400 /camagru/public/errors.php
+ErrorDocument 403 /camagru/public/errors.php
+ErrorDocument 404 /camagru/public/errors.php
+ErrorDocument 405 /camagru/public/errors.php
+ErrorDocument 408 /camagru/public/errors.php
+ErrorDocument 500 /camagru/public/errors.php
+ErrorDocument 502 /camagru/public/errors.php
+ErrorDocument 504 /camagru/public/errors.php
