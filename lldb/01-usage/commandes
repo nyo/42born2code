@@ -1,0 +1,30 @@
+breakpoint set --line 16
+breakpoint set --one-shot --address 0x100000d52
+breakpoint set --address 0x10000100d
+breakpoint set --one-shot --address 0x100001069
+breakpoint set --address 0x10000108d
+breakpoint command add 6
+expression `$rax += $rdx * 4`
+continue
+DONE
+continue
+expression `$rsi -= 4`
+continue
+continue
+expression `$rsi += 4`
+continue
+expression count = 0
+continue
+thread jump --line 31
+continue
+thread jump --line 31
+thread step-inst
+expression `$rax += 4`
+continue
+thread jump --line 31
+thread step-inst
+expression `$rax += 8`
+continue
+continue
+expression `i = 0`
+continue

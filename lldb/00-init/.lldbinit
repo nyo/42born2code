@@ -1,0 +1,30 @@
+# set disassembly flavour to Intel
+settings set target.x86-disassembly-flavor intel
+
+# set custom prompt
+settings set prompt "(anyo) "
+
+# display ASCII art banner at start up
+script print("")
+script print("\033[38;5;88m	 $$$$$$\  $$$$$$$\  $$\   $$\  $$$$$$\   \033[0m")
+script print("\033[38;5;89m	 \____$$\ $$  __$$\ $$ |  $$ |$$  __$$\  \033[0m")
+script print("\033[38;5;90m	 $$$$$$$ |$$ |  $$ |$$ |  $$ |$$ /  $$ | \033[0m")
+script print("\033[38;5;91m	$$  __$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ | \033[0m")
+script print("\033[38;5;92m	\$$$$$$$ |$$ |  $$ |\$$$$$$$ |\$$$$$$  | \033[0m")
+script print("\033[38;5;91m	 \_______|\__|  \__| \____$$ | \______/  \033[0m")
+script print("\033[38;5;90m	                    $$\   $$ |           \033[0m")
+script print("\033[38;5;89m	                    \$$$$$$  |           \033[0m")
+script print("\033[38;5;88m	                     \______/            \033[0m")
+script print("")
+
+
+
+
+
+
+
+
+
+
+
+

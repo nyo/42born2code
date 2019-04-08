@@ -18,6 +18,7 @@ _I am letting everything intact, exactly as I uploaded them to get my final grad
 - **[init](init)**
 - **[21sh](21sh)**
 - **[42sh](42sh)**
+- **[lldb](lldb)**
 
 ### Task list, for this repository
 - [x] Global README
