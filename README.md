@@ -1,8 +1,7 @@
 ## Projects @ 42born2code
 
 These directories are all the individual projects I made for my [school](http://www.42.fr/) so far.<br>
-Keep in mind that a good part of them are made of the **first lines of code** I ever typed, this explains the lack of experience in some...<br>
-_I am letting everything intact, exactly as I uploaded them to get my final grade._
+_I left everything intact - even my first lines of code - exactly as I uploaded them to get my final grade._
 
 ### This lists the project names, in the order they've been made.
 - **[Piscine C](piscine-c)**
