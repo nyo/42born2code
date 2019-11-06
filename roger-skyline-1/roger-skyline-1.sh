@@ -136,10 +136,10 @@ echo "voir ssl.sh"
 # tant qu’elle reste compatible avec les éxigences de ce sujet.
 echo "sudo apt-get install mariadb-client mariadb-server php7.0 php7.0-mysql apache2 libapache2-mod-php7.0 phpmyadmin"
 # sudo mysql -u root -p
-# GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'gayadmin' WITH GRANT OPTION;
+# GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'masteradmin' WITH GRANT OPTION;
 # FLUSH PRIVILEGES;
 # SELECT user, host FROM mysql.user;
-# SET PASSWORD FOR 'root'@'localhost' = PASSWORD('gayadmin');
+# SET PASSWORD FOR 'root'@'localhost' = PASSWORD('masteradmin');
 # sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf
 # comment out "bind-address"
 # sudo a2enmod php7.0
